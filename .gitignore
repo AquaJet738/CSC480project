@@ -1,3 +1,4 @@
 #ignore the given files
 test.csv
 train.csv
+sample_submission.csv
