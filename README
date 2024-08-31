@@ -1,0 +1,78 @@
+# CSC-480: Final Project 
+
+### Project: Supervised Learning: Binary Prediction of Poisonous Mushrooms
+
+### Members: Samuel Kaplan, Steven Wong, Emmanuel Delgado, Clara Davis
+
+### Instructor: Dr. Rodrigo Canaan
+
+## Resources Used:
+Kaggle competition documentation: https://www.kaggle.com/competitions/playground-series-s4e8/overview
+XGBoost Libraries: https://xgboost.readthedocs.io/en/stable/
+SciKit Learn Libraries: https://scikit-learn.org/stable/
+Training Data: https://www.kaggle.com/competitions/playground-series-s4e8/data
+
+
+## Code:
+All code is contained within the ipynb file Kaggle-Comp.ipynb
+
+Most of the code is from fairly standard libraries should any of the import statemets fail use pip or any package manager to install the requisit package. Only uncommon package  may be xgboost which can be found https://xgboost.readthedocs.io/en/stable. To install run ```pip install xgboost```
+
+Before code is run download the training data from https://www.kaggle.com/competitions/playground-series-s4e8/data and store it in the same folder as the Kaggle-Comp.ipynb file.
+
+Code should be run linearly in the cell order provided. 
+
+
+
+
+All code can be run in under 5 min with the exception of the RF 10-90 Data(Cell 42) which I have supplied below:
+This can be done but is computationally "expensive" (50-60 min) so I have provided my output. Values may vary by statistiaclly insignificany amounts between itterations and attempts due to the nature of randomization during the train test split process
+
+#### Output for Cell 42
+
+RandomForestClassifier(n_estimators=10, random_state=42)
+Accuracy :  99.13804535207532
+Precison :  99.34870466118139
+Recall :  99.07413198652145
+F1 :  99.2112283503712
+RandomForestClassifier(n_estimators=20, random_state=42)
+Accuracy :  99.18338887201578
+Precison :  99.3581381501373
+Recall :  99.14801379127022
+F1 :  99.25296475942453
+RandomForestClassifier(n_estimators=30, random_state=42)
+Accuracy :  99.19504557879291
+Precison :  99.36098169505334
+Recall :  99.16658196971237
+F1 :  99.26368665352578
+RandomForestClassifier(n_estimators=40, random_state=42)
+Accuracy :  99.19932326935334
+Precison :  99.3616117150125
+Recall :  99.17381378657932
+F1 :  99.26762393021934
+RandomForestClassifier(n_estimators=50, random_state=42)
+Accuracy :  99.2018898836896
+Precison :  99.35970863805915
+Recall :  99.1804592399165
+F1 :  99.27000302249854
+RandomForestClassifier(n_estimators=60, random_state=42)
+Accuracy :  99.20573980519397
+Precison :  99.36072022258293
+Recall :  99.18651832972394
+F1 :  99.27354285529837
+RandomForestClassifier(n_estimators=70, random_state=42)
+Accuracy :  99.20734393915413
+Precison :  99.36131887065825
+Recall :  99.18886378384295
+F1 :  99.2750164324392
+RandomForestClassifier(n_estimators=80, random_state=42)
+Accuracy :  99.20948278443434
+Precison :  99.3625036221385
+Recall :  99.1916001469818
+F1 :  99.27697833282471
+RandomForestClassifier(n_estimators=90, random_state=42)
+Accuracy :  99.21001749575439
+Precison :  99.36154341641819
+Recall :  99.19355469208097
+F1 :  99.27747799031877
+
